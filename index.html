@@ -145,7 +145,7 @@
         }
 
         .night-mode #chicken-container {
-            background-image: url('https://i.postimg.cc/Y9qRZrwk/Chat-GPT-Image-Jun-14-2025-08-10-18-PM.png');
+             background-image: url('https://i.postimg.cc/Y9qRZrwk/Chat-GPT-Image-Jun-14-2025-08-10-18-PM.png');
         }
 
         /* Click Hint */
@@ -236,7 +236,7 @@
         <div class="mt-8 bg-black/50 backdrop-blur-sm p-4 w-full max-w-md border-2 border-white">
             <p class="text-white/80 text-xs mb-2">Contract Address</p>
             <div class="flex items-center justify-between bg-black/60 p-3 border-2 border-gray-500">
-                <span id="ca-text" class="text-white font-mono text-xs sm:text-sm break-all">C1uckY0urMidd1eFing3rUPt0th3M00n</span>
+                <span id="ca-text" class="text-white font-mono text-xs sm:text-sm break-all">G1qz8ESxjWjsqhuEF9nKxeYzQgy351Wm6EMcsVrRpump</span>
                 <button id="copy-btn" class="ml-4 bg-gray-300 text-black font-bold py-2 px-4 hover:bg-white transition border-2 border-black">
                     Copy
                 </button>
@@ -246,7 +246,7 @@
 
         <!-- Social Links -->
         <div class="mt-8 flex space-x-4">
-            <a href="#" class="social-btn bg-pink-500 text-white font-bold py-3 px-6 shadow-lg hover:bg-pink-600">
+            <a href="https://pump.fun/coin/G1qz8ESxjWjsqhuEF9nKxeYzQgy351Wm6EMcsVrRpump" target="_blank" rel="noopener noreferrer" class="social-btn bg-pink-500 text-white font-bold py-3 px-6 shadow-lg hover:bg-pink-600">
                 Pump.fun
             </a>
             <a href="https://x.com/i/communities/1933943777502044346" target="_blank" rel="noopener noreferrer" class="social-btn bg-blue-500 text-white font-bold py-3 px-6 shadow-lg hover:bg-blue-600">
@@ -293,30 +293,30 @@
         // --- Particle Classes ---
         class ShootingStar {
              constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height * 0.4;
-                this.len = Math.random() * 120 + 20;
-                this.speed = Math.random() * 10 + 8;
-                this.size = Math.random() * 1.5 + 0.5;
-                this.alpha = 1;
-                this.decay = 0.015;
-            }
-            update() {
-                this.x += this.speed;
-                this.y -= this.speed * 0.25; // Shallower angle
-                this.alpha -= this.decay;
-            }
-            draw() {
-                const gradient = ctx.createLinearGradient(this.x, this.y, this.x - this.len, this.y + this.len * 0.25);
-                gradient.addColorStop(0, `rgba(255, 255, 255, ${this.alpha})`);
-                gradient.addColorStop(1, `rgba(255, 255, 255, 0)`);
-                ctx.strokeStyle = gradient;
-                ctx.beginPath();
-                ctx.moveTo(this.x, this.y);
-                ctx.lineTo(this.x - this.len, this.y + this.len * 0.25);
-                ctx.lineWidth = this.size;
-                ctx.stroke();
-            }
+                 this.x = Math.random() * canvas.width;
+                 this.y = Math.random() * canvas.height * 0.4;
+                 this.len = Math.random() * 120 + 20;
+                 this.speed = Math.random() * 10 + 8;
+                 this.size = Math.random() * 1.5 + 0.5;
+                 this.alpha = 1;
+                 this.decay = 0.015;
+             }
+             update() {
+                 this.x += this.speed;
+                 this.y -= this.speed * 0.25; // Shallower angle
+                 this.alpha -= this.decay;
+             }
+             draw() {
+                 const gradient = ctx.createLinearGradient(this.x, this.y, this.x - this.len, this.y + this.len * 0.25);
+                 gradient.addColorStop(0, `rgba(255, 255, 255, ${this.alpha})`);
+                 gradient.addColorStop(1, `rgba(255, 255, 255, 0)`);
+                 ctx.strokeStyle = gradient;
+                 ctx.beginPath();
+                 ctx.moveTo(this.x, this.y);
+                 ctx.lineTo(this.x - this.len, this.y + this.len * 0.25);
+                 ctx.lineWidth = this.size;
+                 ctx.stroke();
+             }
         }
 
         class Bullet {
@@ -338,8 +338,8 @@
                 this.y += this.vy;
                 // Check if the bullet has reached or passed its target
                 if (Math.sqrt((this.targetX - this.x)**2 + (this.targetY - this.y)**2) < 30) {
-                    this.alpha = 0; // Mark for deletion
-                    createExplosion(this.x, this.y);
+                     this.alpha = 0; // Mark for deletion
+                     createExplosion(this.x, this.y);
                 }
             }
 
@@ -423,13 +423,13 @@
         // --- Sound Effects ---
         function initializeAudio() {
              if (!audioCtx) {
-                try {
-                     audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-                } catch(e){
-                    console.error("Web Audio API is not supported in this browser");
-                    return;
-                }
-            }
+                 try {
+                      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                 } catch(e){
+                      console.error("Web Audio API is not supported in this browser");
+                      return;
+                 }
+             }
         }
 
         function playCluckSound() {
